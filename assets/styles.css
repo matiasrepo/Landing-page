@@ -25,6 +25,7 @@ fuente font-family: 'Lobster', cursive;
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
+	
 }
 
 body {
@@ -114,4 +115,5 @@ body {
 	width: 90px;
 	text-align: center;
 	display: inline-block;
+	cursor: pointer;
 }
