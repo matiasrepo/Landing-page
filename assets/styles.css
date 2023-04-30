@@ -46,15 +46,16 @@ body {
 .navbar h1 {
 	white-space: nowrap;
 	align-self: center;
-	display: inline-block;
+	display: flex;
 	margin-right: 4%;
 	font-family: "Lobster", cursive;
-	font-size: 4rem;
+	font-size: 4vw;
 	color: #98d8aa;
 	pointer-events: none;
 }
 
 .logoYerbaCute {
+	width: 10vw;
 	display: flex;
 	background: #ffd3b0;
 	padding: 5px;
