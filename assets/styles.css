@@ -49,8 +49,9 @@ main {
 .introduction h2 {
 	font-weight: 600;
 	font-family: 'Nunito', sans-serif;
-	text-align: left;
-	margin-left: 15px;
+	text-align: right;
+	margin-left:  0px;
+	margin-right: 100px;
 	color: #eed690;
 }
 
@@ -61,7 +62,9 @@ main {
 	text-align: left;
 	align-self: flex-start;
 	padding: 5px 20px 5px 15px;
-
+	margin-top: 10px;
+	margin-right: 200px ;
+	margin-left: 15px;
 	flex-direction: column;
 	color: #ecb390;
 }
