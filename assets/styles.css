@@ -78,9 +78,10 @@ body {
 	color: #ffd3b0;
 	font-family: "Balsamiq Sans", cursive;
 	font-weight: 500;
+	font-size: 15px;
 	padding: 2px;
 	margin: 3px;
-	border: 2px transparent;
+	border: 2px solid transparent;
 	border-radius: 10px;
 }
 
