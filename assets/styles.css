@@ -30,91 +30,202 @@ fuente font-family: 'Lobster', cursive;
 body {
 	background-color: #a6d0dd;
 }
+@media (max-width: 1000px) {
+	.navbar {
+		display: flex;
+		position: fixed;
+		flex-direction:row;
+		width: 100%;
+		border-radius: 0px 0px 10px 10px;
+		background: #ff6969;
+		padding: 5px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: 15%;
+	}
 
-.navbar {
-	display: flex;
-	position: fixed;
-	width: 100%;
-	border-radius: 0px 0px 10px 10px;
-	background: #ff6969;
-	padding: 5px;
-	justify-content: space-around;
-	align-items: center;
+	.navbar h1 {
+		display: inline-flex;
+		white-space: wrap;
+		align-self: flex-start;
+		margin-top: 0.1rem;
+		justify-content: center;
+		font-family: "Lobster", cursive;
+		font-size: 5vh;
+		color: #98d8aa;
+		pointer-events: none;
+		padding: 1px;
+		margin-right: 10px;
+		margin-left: 30px;
+	}
+
+	.logoYerbaCute {
+		display: inline-flex;
+		align-self: center;
+		width: 30vw;
+		background: #ffd3b0;
+		padding: 5px;
+		max-width: 70px;
+		max-height: 70px;
+		border-radius: 70px;
+		margin-right: auto;
+		margin-left: 5px;
+	}
+
+	.navlist {
+		display: inline-flex;
+		white-space: nowrap;
+		margin-right: 1px;
+		margin-left: auto;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex-direction: column-reverse;
+		
+	}
+
+	.navlist a {
+		color: #ffd3b0;
+		font-family: "Balsamiq Sans", cursive;
+		letter-spacing: 3px;
+		font-weight: 500;
+		font-size: 0.8rem;
+		padding: 1px;
+		margin: 5px;
+		border: 2px solid transparent;
+		border-radius: 10px;
+	}
+
+	.navlist a:hover {
+		color: #ffea28;
+		border: 2px solid #ffd4b03a;
+		border-radius: 10px;
+		font-size: 0.8rem;
+		background: transparent;
+		padding: 1px;
+		
+	}
+
+	.navlist button {
+		border: 1px solid grey;
+		color: #252525;
+		background-color: #ffd3b0;
+		border-radius: 15px;
+		height: 25px;
+		width: 60px;
+		text-align: center;
+		text-decoration: underline transparent;
+		display: inline-block;
+		cursor: pointer;
+		margin-bottom: 5px;
+		margin-left: 1px;
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+
+	.navlist button:hover {
+		border: 1px solid palevioletred;
+		background-color: #ffd3b0;
+		border-radius: 15px;
+		font-weight: 600;
+		color: palevioletred;
+		height: 25px;
+		width: 60px;
+		text-align: center;
+		display: inline-block;
+		cursor: pointer;
+		margin-bottom: 5px;
+		margin-left: 1px;
+		margin-top: 10px;
+		margin-right: 10px;
+	}
 }
 
-.navbar h1 {
-	white-space: nowrap;
-	align-self: center;
-	display: flex;
-	margin-right: 4%;
-	font-family: "Lobster", cursive;
-	font-size: 4vw;
-	color: #98d8aa;
-	pointer-events: none;
-}
+@media (min-width: 1000px) {
+	.navbar {
+		display: flex;
+		position: fixed;
+		width: 100%;
+		border-radius: 0px 0px 10px 10px;
+		background: #ff6969;
+		padding: 5px;
+		justify-content: space-around;
+		align-items: center;
+	}
 
-.logoYerbaCute {
-	width: 10vw;
-	display: flex;
-	background: #ffd3b0;
-	padding: 5px;
-	max-width: 70px;
-	max-height: 70px;
-	border-radius: 70px;
-	margin-right: 10px;
-	margin-left: 40px;
-}
+	.navbar h1 {
+		white-space: nowrap;
+		align-self: center;
+		display: flex;
+		margin-right: 4%;
+		font-family: "Lobster", cursive;
+		font-size: 4vw;
+		color: #98d8aa;
+		pointer-events: none;
+	}
 
-.navlist {
-	display: flex;
-	margin: 10px;
-	justify-content: space-around;
-	align-items: center;
-	gap: 10px;
-}
+	.logoYerbaCute {
+		width: 10vw;
+		display: flex;
+		background: #ffd3b0;
+		padding: 5px;
+		max-width: 70px;
+		max-height: 70px;
+		border-radius: 70px;
+		margin-right: 10px;
+		margin-left: 40px;
+	}
 
-.navlist a {
-	color: #ffd3b0;
-	font-family: "Balsamiq Sans", cursive;
-	font-weight: 500;
-	font-size: 15px;
-	padding: 2px;
-	margin: 3px;
-	border: 2px solid transparent;
-	border-radius: 10px;
-}
+	.navlist {
+		display: flex;
+		margin: 10px;
+		justify-content: space-around;
+		align-items: center;
+		gap: 10px;
+	}
 
-.navlist a:hover {
-	color: #ffea28;
-	border: 2px solid #ffd4b03a;
-	border-radius: 10px;
-	font-size: 15px;
-	background: transparent;
-	padding: 2px;
-}
+	.navlist a {
+		color: #ffd3b0;
+		font-family: "Balsamiq Sans", cursive;
+		font-weight: 500;
+		font-size: 15px;
+		padding: 2px;
+		margin: 3px;
+		border: 2px solid transparent;
+		border-radius: 10px;
+	}
 
-.navlist button {
-	border: 3px solid grey;
-	color: #252525;
-	background-color: #ffd3b0;
-	border-radius: 15px;
-	height: 30px;
-	width: 90px;
-	text-align: center;
-	text-decoration: underline transparent;
-	display: inline-block;
-	cursor: pointer;
-}
+	.navlist a:hover {
+		color: #ffea28;
+		border: 2px solid #ffd4b03a;
+		border-radius: 10px;
+		font-size: 15px;
+		background: transparent;
+		padding: 2px;
+	}
 
-.navlist button:hover {
-	border: 2px solid palevioletred;
-	background-color: #ffd3b0;
-	border-radius: 15px;
-	font-weight: 600;
-	color: palevioletred;
-	height: 30px;
-	width: 90px;
-	text-align: center;
-	display: inline-block;
-	cursor: pointer;
+	.navlist button {
+		border: 3px solid grey;
+		color: #252525;
+		background-color: #ffd3b0;
+		border-radius: 15px;
+		height: 30px;
+		width: 90px;
+		text-align: center;
+		text-decoration: underline transparent;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.navlist button:hover {
+		border: 2px solid palevioletred;
+		background-color: #ffd3b0;
+		border-radius: 15px;
+		font-weight: 600;
+		color: palevioletred;
+		height: 30px;
+		width: 90px;
+		text-align: center;
+		display: inline-block;
+		cursor: pointer;
+	}
 }
