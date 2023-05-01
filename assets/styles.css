@@ -30,7 +30,7 @@ fuente font-family: 'Lobster', cursive;
 body {
 	background-color: #a6d0dd;
 }
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
 	.navbar {
 		display: flex;
 		position: fixed;
@@ -69,15 +69,16 @@ body {
 		max-height: 70px;
 		border-radius: 70px;
 		margin-right: auto;
-		margin-left: 5px;
+		margin-left: auto;
 	}
 
 	.navlist {
+		
 		display: inline-flex;
 		white-space: nowrap;
 		margin-right: 1px;
 		margin-top: 7px;
-		margin-left: auto;
+		margin-left: 1px;
 		justify-content: flex-end;
 		align-items: flex-end;
 		flex-direction: column-reverse;
@@ -141,7 +142,7 @@ body {
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
 	.navbar {
 		display: flex;
 		position: fixed;
