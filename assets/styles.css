@@ -41,17 +41,17 @@ body {
 		padding: 5px;
 		justify-content: flex-start;
 		align-items: flex-start;
-		height: 15%;
+		height: 8rem;
 	}
 
 	.navbar h1 {
 		display: inline-flex;
 		white-space: wrap;
 		align-self: flex-start;
-		margin-top: 0.1rem;
+		margin-top: 1px;
 		justify-content: center;
 		font-family: "Lobster", cursive;
-		font-size: 5vh;
+		font-size: 45px;
 		color: #98d8aa;
 		pointer-events: none;
 		padding: 1px;
@@ -76,6 +76,7 @@ body {
 		display: inline-flex;
 		white-space: nowrap;
 		margin-right: 1px;
+		margin-top: 7px;
 		margin-left: auto;
 		justify-content: flex-end;
 		align-items: flex-end;
