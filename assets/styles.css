@@ -25,7 +25,6 @@ fuente font-family: 'Lobster', cursive;
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	
 }
 
 body {
@@ -34,13 +33,13 @@ body {
 
 .navbar {
 	display: flex;
-	border-radius: 7px;
+	position: fixed;
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
 	background: #ff6969;
-	margin: 4px;
 	padding: 5px;
 	justify-content: space-around;
 	align-items: center;
-	height: 80px;
 }
 
 .navbar h1 {
