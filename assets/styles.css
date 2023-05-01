@@ -1,24 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 /* 
 llamar fuente:
-
 font-family: 'Balsamiq Sans', cursive; 
-
 */
-
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&display=swap");
 /* 
-
 llamar fuente:
 font-family: 'Big Shoulders Text', cursive;
-
 */
-
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
 /* llamar 
 fuente font-family: 'Lobster', cursive;
  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,500&display=swap');
+/* llamar fuente:
+font-family: 'Nunito', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/*
+font-family: 'Inter', sans-serif;
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -30,10 +32,60 @@ fuente font-family: 'Lobster', cursive;
 body {
 	background-color: #a6d0dd;
 }
+main {
+	display: flex;
+	justify-content: flex-start;
+	background: #7a4579;
+	margin-top: -25px;
+	padding-top: 25px;
+}
+
+.introduction {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.introduction h2 {
+	font-weight: 600;
+	font-family: 'Nunito', sans-serif;
+	text-align: left;
+	margin-left: 15px;
+	color: #eed690;
+}
+
+.introduction p {
+	font-weight: 400;
+	font-size: 10px;
+	font-family: 'Inter', sans-serif;
+	text-align: left;
+	align-self: flex-start;
+	padding: 5px 20px 5px 15px;
+
+	flex-direction: column;
+	color: #ecb390;
+}
+.introduction span {
+	color: #849561;
+	font-weight: 800;
+}
+
+.mateMain {
+	display:flex;
+	background-color: #252525;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
+	white-space: wrap;
+	margin-right: 20px;
+	margin-left: 20px;
+}
 @media (max-width: 500px) {
+	header {
+		padding: 0px 0px 130px 0px ;
+	}
 	.navbar {
-		display: flex;
 		position: fixed;
+		display: flex;
 		flex-direction:row;
 		width: 100%;
 		border-radius: 0px 0px 10px 10px;
@@ -142,6 +194,9 @@ body {
 }
 
 @media (min-width: 500px) {
+	header {
+		padding: 0px 0px 85px 0px ;
+	}
 	.navbar {
 		display: flex;
 		position: fixed;
